@@ -1,0 +1,14 @@
+{
+  "name": "practica-pool-mariadb",
+  "version": "1.0.0",
+  "description": "Practica de pool de conexiones con Node.js y MariaDB",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mariadb": "^3.4.0"
+  }
+}
