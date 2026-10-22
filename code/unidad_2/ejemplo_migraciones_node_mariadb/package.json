@@ -1,0 +1,19 @@
+{
+  "name": "ejemplo-migraciones-node-mariadb",
+  "version": "1.0.0",
+  "description": "Ejemplo didáctico de migraciones con Node.js, Sequelize 6 y MariaDB",
+  "private": true,
+  "scripts": {
+    "migrate": "sequelize-cli db:migrate --config config/config.js",
+    "migrate:status": "sequelize-cli db:migrate:status --config config/config.js",
+    "migrate:undo": "sequelize-cli db:migrate:undo --config config/config.js"
+  },
+  "dependencies": {
+    "mariadb": "^3.4.0",
+    "sequelize": "^6.37.7",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.3"
+  }
+}
