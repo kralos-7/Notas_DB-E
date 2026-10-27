@@ -1,0 +1,42 @@
+openapi: 3.0.3
+info:
+  title: API Académica UMAR
+  description: Especificación de API para la gestión de profesores y departamentos.
+  version: 1.0.0
+paths:
+  /api/v1/profesores:
+    post:
+      summary: Registrar un nuevo profesor
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - nombre
+                - departamento
+              properties:
+                nombre:
+                  type: string
+                  example: "Dr. Juan Perez"
+                departamento:
+                  type: string
+                  example: "Ingeniería en Tecnologías Computacionales"
+      responses:
+        '201':
+          description: Profesor creado exitosamente
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  nombre:
+                    type: string
+                  departamento:
+                    type: string
+        '400':
+          description: Datos de entrada faltantes o inválidos

@@ -1,0 +1,13 @@
+{
+  "name": "practica2-contrato-validaciones",
+  "version": "1.0.0",
+  "description": "Práctica 2: DTOs, Validaciones, Sanitización y Manejo Centralizado de Errores",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7"
+  }
+}
